@@ -1,20 +1,30 @@
 # Sky-Jump
 Prefabs for Sky Jump
 
-"rotate.cs" = script to spin an otherwise stationary platform
+CameraController.cs = script to give to the camera so it follows the player
 
-"Rotating Platform.prefab" = stationary cylindrical platform spinning in place
+Clouds.prefab = Giant cloud platform, can be aligned to cut off the bottoms of the platforms so they look like they're floating
 
-"Clouds.prefab" = plane with the cloud pattern that should be lined up to cut off the bottoms of the platforms.  The materials can change for this plane depending on the scene, but this should always be paired with the script that triggers a "game over" if the player falls off a platform and hits the plane
+Collectible.cs = script to attach to the collectible to make it spin
 
-"Collectible.prefab" = a little spinning cube that disappears when a player runs into it
+Collectible.prefab = little spinning cube that represents a "power-up"
 
-"Collectible.cs" = the script that makes the little cube spin
+Crumbler.cs = script to make the crumbler platform disappear
 
-"Door.prefab" = right now just a rectangle that triggers a "success" when a player successfully reaches it
+Crumbler1.prefab = platform that vanishes after a certain amount of time
 
-"Start.prefab" = stationary platform that the player starts the level on.  This prefab can also be used as the end stationary platform that the end-of-level door sits on, just make sure to rename it "End" in your scene to avoid confusion.  This prefab can also be used as a spinning platform that spins in an orbit-like fashion if you give it the "SpinnerScript"
+Door.prefab = thing to mark the end of the level (triggers the "you win" or "you lose" message)
 
-"SpinnerScript.cs" = creates orbiting-like behavior in the stationary platforms "start.prefab"
+Level01TestCharacter.prefab = our third person character
 
-"PlayerController.cs" = (NEEDS A LOT OF EDITS TO APPROPRIATELY BEHAVE), controls various triggers in the game (if the player runs into a collectible, or a door, or the clouds, etc)
+ThirdPersonCharacter.cs = code for the third person character
+
+Rotating Platform.prefab = the flat cylinder that just spins in place
+
+Safe1.prefab = stationary platforms (no special characteristics)
+
+Spinner.prefab = orbiting platform
+
+SpinnerScript.cs = script to make the platform "spinner" orbit
+
+Swayer.prefab = swaying platform
